@@ -1,3 +1,5 @@
+const scroll = new SmoothScroll('a[href*="#"]');
+
 const nav = document.getElementById('nav');
 const sticky = nav.offsetTop + 50;
 
