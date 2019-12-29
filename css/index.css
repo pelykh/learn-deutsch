@@ -1,20 +1,12 @@
 /* Fonts family */
 /* font-family: 'Open Sans', sans-serif;*/
-body::before {
-  content: "";
-  position: fixed;
-  top: -10px;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.8);
-  z-index: 100;
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #252422;
+}
 
-}
-body{
-font-family: 'Open Sans', sans-serif;
-}
-::selection {
+body::selection {
   background-color: #FFA;
   color: #066;
 }
@@ -83,11 +75,70 @@ height: 30px;
 
 .mokka
 {
-
-
   border:0px solid blue;
   margin:0px;
   opacity: 100%;
   background-color: #FFF3DC;
 height: 100vh;
+}
+
+.nav {
+  width: 100vw;
+  position: fixed;
+  transition: background 0.3s, color 0.3s;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__sticky {
+  color: #ffffff;
+}
+
+.nav__scrolled {
+  color: inherit;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.nav_links {
+  margin: 10px 50px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  margin: 4px;
+  font-size: 18px;
+  padding: 4px;
+  vertical-align: middle;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.nav__logo {
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo:hover {
+  opacity: 0.8;
+}
+
+.nav__logo__icon {
+  height: 32px;
+}
+
+.nav__logo__title {
+  vertical-align: middle;
+  height: 32px;
+  line-height: 32px;
+  margin: 8px;
+  font-size: 18px;
 }
