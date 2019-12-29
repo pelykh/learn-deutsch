@@ -11,7 +11,7 @@ body::selection {
   color: #066;
 }
 h1 {
-  color: #FFF3DC;
+  color: #ffffff;
 
   font-size: 60px;
   font-weight: bold;
@@ -141,4 +141,26 @@ height: 100vh;
   line-height: 32px;
   margin: 8px;
   font-size: 18px;
+}
+
+.course_goals_page {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.goals_title {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.goals_list {
+  list-style-type: none;
+  line-height: 1.7em;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.goals_list__item {
+  margin: 10px;
 }
