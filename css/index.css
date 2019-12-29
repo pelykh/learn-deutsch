@@ -1,3 +1,93 @@
+/* Fonts family */
+/* font-family: 'Open Sans', sans-serif;*/
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+
+}
+body{
+font-family: 'Open Sans', sans-serif;
+}
+::selection {
+  background-color: #FFA;
+  color: #066;
+}
 h1 {
-  color: red;
+  color: #FFF3DC;
+
+  font-size: 60px;
+  font-weight: bold;
+}
+
+header
+{
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://images.unsplash.com/photo-1527142573877-7d395d8fa568?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+  /* flex-box thing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 5%;
+  /* text-shadow: 1px 1px 1px black; */
+}
+.shadow {
+  -moz-box-shadow:    0 8px 6px -6px black;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  box-shadow:         0 8px 6px -6px black;
+}
+
+.green-text{
+  color: #484649;
+  font-weight: bold;
+  font-size: 16px;
+
+  padding: 10px;
+
+    text-align: center; /* Выравнивание по центру */
+
+
+}
+
+.green-star{
+size:24px;
+}
+/* .style1 {
+  border:10px grey;
+  background-color: silver;
+  height: 100px;
+  weight:100px;
+  align-content: center;
+  box-shadow: 0 4px 3px -3px black;
+} */
+
+.big-h{
+font-size: 24px;
+color:#484649;
+text-align: center;
+/* background-color: #FFF3DC; */
+width: 100%;
+height: 30px;
+}
+
+
+.mokka
+{
+
+
+  border:0px solid blue;
+  margin:0px;
+  opacity: 100%;
+  background-color: #FFF3DC;
+height: 100vh;
 }
