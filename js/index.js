@@ -14,4 +14,3 @@ const updateNavOnScroll = () => {
 };
 
 window.addEventListener('scroll', updateNavOnScroll);
-

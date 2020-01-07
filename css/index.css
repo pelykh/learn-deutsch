@@ -12,26 +12,27 @@ body::selection {
 }
 
 .shadow {
-  -moz-box-shadow:    0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
   -webkit-box-shadow: 0 8px 6px -6px black;
-  box-shadow:         0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
-.green-text{
+.green-text {
   color: #484649;
   font-weight: bold;
   font-size: 16px;
 
   padding: 10px;
 
-    text-align: center; /* Выравнивание по центру */
+  text-align: center; /* Выравнивание по центру */
 
 
 }
 
-.green-star{
-size:24px;
+.green-star {
+  size: 24px;
 }
+
 /* .style1 {
   border:10px grey;
   background-color: silver;
@@ -41,23 +42,22 @@ size:24px;
   box-shadow: 0 4px 3px -3px black;
 } */
 
-.big-h{
-font-size: 24px;
-color:#484649;
-text-align: center;
-/* background-color: #FFF3DC; */
-width: 100%;
-height: 30px;
+.big-h {
+  font-size: 24px;
+  color: #484649;
+  text-align: center;
+  /* background-color: #FFF3DC; */
+  width: 100%;
+  height: 30px;
 }
 
 
-.mokka
-{
-  border:0px solid blue;
-  margin:0px;
+.mokka {
+  border: 0px solid blue;
+  margin: 0px;
   opacity: 100%;
   background-color: #FFF3DC;
-height: 100vh;
+  height: 100vh;
 }
 
 .nav {
@@ -67,11 +67,11 @@ height: 100vh;
   height: 60px;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .nav__sticky {
   /*color: #ffffff;*/
-  color: inherit;
 }
 
 .nav__scrolled {
@@ -89,7 +89,7 @@ height: 100vh;
   text-decoration: none;
   color: inherit;
   margin: 4px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 4px;
   vertical-align: middle;
 }
@@ -104,6 +104,7 @@ height: 100vh;
   margin: 10px 50px;
   display: flex;
   align-items: center;
+  z-index: 3;
 }
 
 .nav__logo:hover {
@@ -119,7 +120,8 @@ height: 100vh;
   height: 32px;
   line-height: 32px;
   margin: 8px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 .course_goals_page {
@@ -129,14 +131,14 @@ height: 100vh;
 }
 
 .goals_title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 30px;
 }
 
 .goals_list {
   list-style-type: none;
   line-height: 1.7em;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -145,15 +147,8 @@ height: 100vh;
 }
 
 .header {
-  height: 90vh;
-  margin-bottom: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   /*background: #006666;*/
-  background: #ffffff;
-  padding-left: 100px;
+  /*background: #ffffff;*/
 }
 
 .header__title {
@@ -180,7 +175,261 @@ height: 100vh;
   margin: 8px 0;
 }
 
+.header_content {
+  height: 100vh;
+  align-items: center;
+}
+
+.header__text_wrapper {
+  z-index: 2;
+}
+
+.background_illustration {
+  position: absolute;
+}
+
+.header__character {
+  bottom: 10vh;
+  right: 10vw;
+  width: 40vw;
+  z-index: 2;
+}
+
+.header__cloud_01 {
+  bottom: -50px;
+  right: 0;
+  width: 50vw;
+  z-index: 1;
+}
+
+.header__cloud_02 {
+  top: 0;
+  right: 0;
+  width: 30vw;
+  z-index: 1;
+}
+
+.header__cloud_03 {
+  left: 0;
+  width: 50vw;
+  z-index: 1;
+  opacity: 0.5;
+}
+
 #particles-js {
   position: absolute;
   width: 100vw;
+  z-index: 1;
+}
+
+.page__title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.text {
+  margin: 4px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.methodology__text_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40vh;
+}
+
+.methodology__page {
+  margin-top: 100px;
+  height: 60vh;
+  align-items: center;
+}
+
+.methodology_character {
+  height: 40vh;
+}
+
+.methodology_cloud {
+  left: 0;
+  height: 70vh;
+}
+
+.google_map {
+  width: 100%;
+  height: 400px;
+  border-radius: 40px;
+}
+
+.contact_us_page {
+  height: 100vh;
+  align-items: center;
+}
+
+.teachers_page {
+  height: 80vh;
+  position: relative
+}
+
+.teachers_title {
+  margin-top: 100px;
+}
+
+.teachers_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.teachers_list__bullet {
+  margin-right: 10px;
+}
+
+.teachers_list__item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.teachers_character {
+  bottom: 0;
+  right: 100px;
+  width: 15vw;
+  z-index: 2;
+}
+
+.teachers_cloud_01 {
+  bottom: -10vh;
+  right: 0;
+  width: 35vw;
+  z-index: 1;
+}
+
+.teachers_cloud_02 {
+  bottom: -5vh;
+  left: 0;
+  width: 35vw;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.teachers_logos {
+  background: #FFCF39;
+  height: 124px;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teachers_logo {
+  height: 64px;
+  padding: 0 20px;
+}
+
+.price_plan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 20px;
+  /*margin: 10px;*/
+  border: 1px solid #f1f1f1;
+}
+
+.price_plan__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.price_plan__price {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.price_plan__options_block {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+  margin: 30px 20px;
+}
+.price_plan__option {
+  margin: 10px 0;
+  font-size: 1.10rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.price_plan__button {
+  color: white;
+  text-decoration: none;
+  background: #FFCF39;
+  border-radius: 8px;
+  padding: 15px 0px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.10em;
+}
+
+.price_plan__button:hover {
+  opacity: 0.7;
+}
+
+.center_text {
+  text-align: center;
+}
+
+.why_us_card {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+  position: relative;
+}
+
+.why_us_block {
+  margin-top: 20px;
+}
+
+.why_us_card__text {
+  color: #252422;
+  font-weight: 300;
+}
+
+.why_us_card__image {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.red_block {
+  background: rgba(247, 16, 0, 0.27);
+}
+
+.yellow_block {
+  background: rgba(253, 211, 0, 0.27);
+}
+
+.black_block {
+  background: rgba(4, 0, 16, 0.21);
 }
