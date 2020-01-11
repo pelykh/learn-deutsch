@@ -150,6 +150,13 @@ body::selection {
   padding: 20px;
   margin: 0;
   height: 100%;
+  background: #ffffff;
+}
+
+
+.goals_character {
+  bottom: -50px;
+  width: 100%;
 }
 
 .goals_picture_box {
@@ -158,8 +165,8 @@ body::selection {
   height: 100%;
   padding: 20px;
   position: relative;
+  background: #ffffff;
 }
-
 
 .goals_picture_box__corner:before {
   content: '';
@@ -192,15 +199,12 @@ body::selection {
 
 .goals_background_strip {
   background: #FFCF39;
-  height: 20vh;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
 }
 
 .header {
