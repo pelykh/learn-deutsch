@@ -347,7 +347,7 @@ body::selection {
 }
 
 .contact_us_page {
-  height: 100vh;
+  margin-bottom: 50px;
   align-items: center;
 }
 
