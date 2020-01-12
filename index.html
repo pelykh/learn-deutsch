@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <title>Learn deutsch</title>
+  <title>ZumZiel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link href="<link href=" https:
-  //fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-        type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/lib/flexbox.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -19,8 +17,8 @@
     <span class="nav__logo__title">Zum Ziel</span>
   </a>
   <div class="nav_links">
-    <a class="link" href="#price">Ціна</a>
-    <a class="link" href="#contacts">Контакти</a>
+    <a class="link nav_link" href="#price">Ціна</a>
+    <a class="link nav_link" href="#contacts">Контакти</a>
   </div>
 </nav>
 <!-- 1 -->
@@ -28,8 +26,10 @@
   <div id="particles-js"></div>
   <div class="row header_content">
     <div class="col-md-offset-1 col-md-5 header__text_wrapper">
-      <h1 class="header__title">Вивчи німецьку разом з</h1>
-      <h1 class="header__name">Zum Ziel</h1>
+      <h1>
+        <span class="header__title">Вивчи німецьку разом з</span>
+        <span class="header__name">Zum Ziel</span>
+      </h1>
       <h2 class="header_subtitle">Курси німецької мови в місті Рівне</h2>
     </div>
     <img class="background_illustration header__character" src="images/header_character.png"/>
@@ -56,28 +56,38 @@
 <div class="row why_us_block">
   <div class="col-md-offset-2 col-md-8">
     <div class="row center-md">
-      <div class="col-md-3 why_us_card black_block">
-        <img class="why_us_card__image" src="images/header_character.png"/>
-        <h3 class="subtitle"> Не вистачає часу?</h3>
-        <p class="text">
-          Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
-        </p>
+      <div class="col-lg-3 col-md-4">
+        <div class="why_us_card__wrapper black_block">
+          <div class="why_us_card">
+            <img class="why_us_card__image" src="images/header_character.png"/>
+            <h3 class="subtitle">Не вистачає часу?</h3>
+            <p class="text">
+              Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 why_us_card red_block">
-        <img class="why_us_card__image" src="images/header_character.png"/>
-        <h3 class="subtitle"> Не вистачає часу?</h3>
-        <p class="text">
-          Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
-          Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
-        </p>
+      <div class="col-lg-3 col-md-4">
+        <div class="why_us_card__wrapper red_block">
+          <div class="why_us_card">
+            <img class="why_us_card__image" src="images/header_character.png"/>
+            <h3 class="subtitle">Маєш певний рівень знань?</h3>
+            <p class="text">
+              Групи формуються за рівнями знань після попереднього безкоштовного тестування
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 why_us_card yellow_block">
-        <img class="why_us_card__image" src="images/header_character.png"/>
-        <h3 class="subtitle"> Не вистачає часу?</h3>
-        <p class="text">
-          Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
-          Центр пропонує програми різних типів інтенсивності з гнучким графіком і в будь-якому режимі.
-        </p>
+      <div class="col-lg-3 col-md-4">
+        <div class="why_us_card__wrapper yellow_block">
+          <div class="why_us_card">
+            <img class="why_us_card__image" src="images/header_character.png"/>
+            <h3 class="subtitle">Маєш певний рівень знань?</h3>
+            <p class="text">
+              Зручне розташування: 5 хв. від центру міста, м.Рівне, вул. Пластова 31, ауд. 318
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,30 +95,39 @@
 
 <div class="methodology__page">
   <h2 class="page__title"><a id="methodology"></a> Новітні методики викладання</h2>
-  <div class="row">
-    <div class="col-md-offset-1 col-md-4 end-md">
-      <img class="methodology_character" src="images/methodology_character.png"/>
-    </div>
-    <div class="methodology__text_content col-md-offset-1 col-md-4">
-      <div>
-        <h3 class="subtitle">Сучасні підручники</h3>
-        <p class="text">
-          Використання сучасних підручників іноземних видавництв (Hueber, Klett, Cornelsen, Langenscheidt) з відео та
-          аудіо матеріалами
-        </p>
+
+  <div class="col-md-offset-2 col-md-8">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="methodology_character__wrapper">
+          <img class="methodology_character__image" src="images/methodology_character.png"/>
+        </div>
       </div>
-      <div>
-        <h3 class="subtitle">Занурення в середовище</h3>
-        <p class="text">
-          Викладання ведеться переважно німецькою мовою для створення ефекту «занурення» в мовне
-          середовище
-        </p>
-      </div>
-      <div>
-        <h3 class="subtitle">Комунікативний метод</h3>
-        <p class="text">
-          Вивчення мови через живе спілкування, діалог між викладачем та учнями, замість зазубрювання граматичних правил
-        </p>
+      <div class="col-md-6">
+        <div class="methodology__text_content">
+          <div>
+            <h3 class="subtitle">Сучасні підручники</h3>
+            <p class="text">
+              Використання сучасних підручників іноземних видавництв (Hueber, Klett, Cornelsen, Langenscheidt) з відео
+              та
+              аудіо матеріалами
+            </p>
+          </div>
+          <div>
+            <h3 class="subtitle">Занурення в середовище</h3>
+            <p class="text">
+              Викладання ведеться переважно німецькою мовою для створення ефекту «занурення» в мовне
+              середовище
+            </p>
+          </div>
+          <div>
+            <h3 class="subtitle">Комунікативний метод</h3>
+            <p class="text">
+              Вивчення мови через живе спілкування, діалог між викладачем та учнями, замість зазубрювання граматичних
+              правил
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -123,13 +142,16 @@
       <li class="teachers_list__item"><img class="teachers_list__bullet" src="images/bullet.png"/>
         <p class="text">Усі викладачі є кандидатами філологічних та педагогічних наук</p></li>
       <li class="teachers_list__item"><img class="teachers_list__bullet" src="images/bullet.png"/>
-        <p class="text">Мають вчені звання доцента та професора підтверджене сертифікатами Goethe-Institut володіння німецькою мовою
+        <p class="text">Мають вчені звання доцента та професора підтверджене сертифікатами Goethe-Institut володіння
+          німецькою мовою
           на рівні С1-С2</p></li>
       <li class="teachers_list__item"><img class="teachers_list__bullet" src="images/bullet.png"/>
-        <p class="text">Багаторічний досвід викладання німецької мови в університеті, в школі, на мовних курсах та в проведенні
+        <p class="text">Багаторічний досвід викладання німецької мови в університеті, в школі, на мовних курсах та в
+          проведенні
           індивідуальних занять</p></li>
       <li class="teachers_list__item"><img class="teachers_list__bullet" src="images/bullet.png"/>
-        <p class="text">Тісна співпраця центру іноземних мов «» з міжнародними німецькомовними організаціями Goethe-Institut, DAAD
+        <p class="text">Тісна співпраця центру іноземних мов «» з міжнародними німецькомовними організаціями
+          Goethe-Institut, DAAD
           (Німецька академічна служба обмінів) та Deutsche Auslandgeselschaft (Міністерство закордонних справ
           федеральної землі Сілезія Гольштайн, Німеччина)</p></li>
       <li class="teachers_list__item"><img class="teachers_list__bullet" src="images/bullet.png"/>
@@ -149,13 +171,13 @@
   <h2 class="page__title"><a id="course_goals"></a>Напрями підготовки</h2>
   <div class="col-md-offset-2 col-md-8">
     <div class="row goals_page__content">
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="goals_picture_box">
           <div class="goals_picture_box__corner"></div>
           <img class="background_illustration goals_character" src="images/goals_character.png">
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <ul class="goals_list">
           <li class="goals_list__item">
             <img class="goals_list__bullet" src="images/bullet.png"/>
@@ -183,7 +205,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <ul class="goals_list">
           <li class="goals_list__item">
             <img class="goals_list__bullet" src="images/bullet.png"/>
@@ -201,9 +223,11 @@
             <img class="goals_list__bullet" src="images/bullet.png"/>
             <span class="text">Навчання по Skype</span>
           </li>
-          <li class="goals_list__item">‍
+          <li class="goals_list__item">
             <img class="goals_list__bullet" src="images/bullet.png"/>
-            <span class="text">Спеціалізовані курси для фахівців (лікарі, інженери, представники робітничих професій)</span>
+            <span class="text">
+              Спеціалізовані курси для фахівців (лікарі, інженери, представники робітничих професій)
+            </span>
           </li>
         </ul>
       </div>
@@ -212,16 +236,11 @@
   <div class="goals_background_strip"></div>
 </div>
 
-<br/>
-<br/>
-<br/>
-<br/>
-
 <div class="price_page">
   <h2 class="page__title"><a id="price"></a>Вартість навчання</h2>
   <div class="col-md-offset-2 col-md-8">
     <div class="row center-md">
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="box price_plan">
           <div class="price_plan__title">Семестр</div>
           <div class="price_plan__price">3400 грн</div>
@@ -235,7 +254,7 @@
           <a class="price_plan__button" href="#contacts">Обрати</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="box price_plan">
           <div class="price_plan__title">Інтенсив</div>
           <div class="price_plan__price">3400 грн</div>
@@ -249,7 +268,7 @@
           <a class="price_plan__button" href="#contacts">Обрати</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-4">
         <div class="box price_plan">
           <div class="price_plan__title">Семестр</div>
           <div class="price_plan__price">3400 грн</div>
@@ -267,7 +286,45 @@
   </div>
 </div>
 
-<h2 class="page__title"><a id="questions"></a>Популярні запитання</h2>
+<div class="questions_page">
+  <h2 class="page__title"><a id="questions"></a>Популярні запитання</h2>
+  <div class="col-md-offset-2 col-md-8">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="questions_images_block">
+          <img class="questions_character" src="images/questions_character.png"/>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="question">
+          <h3 class="subtitle">Сучасні підручники?</h3>
+          <p class="text">
+            Використання сучасних підручників іноземних видавництв (Hueber, Klett, Cornelsen, Langenscheidt) з відео та
+            аудіо матеріалами
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="subtitle">Занурення в середовище?</h3>
+          <p class="text">
+            Викладання ведеться переважно німецькою мовою для створення ефекту «занурення» в мовне
+            середовище
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="subtitle">Комунікативний метод?</h3>
+          <p class="text">
+            Вивчення мови через живе спілкування, діалог між викладачем та учнями, замість зазубрювання граматичних
+            правил
+          </p>
+        </div>
+        <div class="question">
+          <a class="link" href="/questions">Дізнатися більше...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
 <h2 class="page__title"><a id="contacts"></a>Контакти</h2>
@@ -292,6 +349,10 @@
 
   </div>
 </div>
+
+<footer class="footer">
+
+</footer>
 
 <script src="js/lib/smooth-scroll.polyfills.min.js"></script>
 <script src="js/lib/particles.min.js"></script>

@@ -77,7 +77,7 @@ body::selection {
 .nav__scrolled {
   color: inherit;
   background: #ffffff;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav_links {
@@ -85,13 +85,17 @@ body::selection {
   display: flex;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
+.nav_link {
   margin: 4px;
-  font-size: 20px;
   padding: 4px;
   vertical-align: middle;
+  color: inherit !important;
+}
+
+.link {
+  color: dodgerblue;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .link:hover {
@@ -198,13 +202,13 @@ body::selection {
 }
 
 .goals_background_strip {
-  background: #FFCF39;
+  background: #E76B59;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+  /*border-bottom-left-radius: 20%;*/
+  /*border-bottom-right-radius: 20%;*/
 }
 
 .header {
@@ -215,23 +219,23 @@ body::selection {
 .header__title {
   /*color: white;*/
   color: #252422;
-  font-weight: 500;
-  font-size: 60px;
-  margin: 0px;
+  font-weight: 400;
+  font-size: 54px;
+  display: block;
 }
 
 .header__name {
   /*color: white;*/
   color: #252422;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 60px;
-  margin: 0px;
+  margin: 0;
 }
 
 .header_subtitle {
   /*color: white;*/
   color: #252422;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   margin: 8px 0;
 }
@@ -298,7 +302,7 @@ body::selection {
 
 .text {
   margin: 4px 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.1rem;
   opacity: .6;
 }
@@ -308,7 +312,7 @@ body::selection {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  height: 40vh;
+  height: 100%;
 }
 
 .methodology__page {
@@ -318,8 +322,16 @@ body::selection {
   position: relative;
 }
 
-.methodology_character {
-  height: 40vh;
+.methodology_character__wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.methodology_character__image {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 .methodology_cloud {
@@ -406,7 +418,7 @@ body::selection {
 }
 
 .price_page {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .price_plan {
@@ -421,12 +433,12 @@ body::selection {
 
 .price_plan__title {
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .price_plan__price {
   font-size: 2.7rem;
-  font-weight: 800;
+  font-weight: 700;
   margin: 10px 0;
 }
 
@@ -464,12 +476,15 @@ body::selection {
   text-align: center;
 }
 
-.why_us_card {
-  border-radius: 10px;
-  padding: 30px;
-  margin: 10px;
+.why_us_card__wrapper {
+  height: 100%;
   border: 1px solid #f1f1f1;
   text-align: left;
+  border-radius: 10px;
+}
+
+.why_us_card {
+  margin: 30px;
   position: relative;
 }
 
@@ -494,4 +509,32 @@ body::selection {
 
 .black_block {
   background: rgba(4, 0, 16, 0.21);
+}
+
+.questions_page {
+  min-height: 60vh;
+}
+
+.question {
+  margin: 8px 2px;
+  padding: 8px 2px;
+}
+
+.questions_images_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.questions_character {
+  max-height: 400px;
+}
+
+.footer {
+  background: #484649;
+  left: 0;
+  right: 0;
+  height: 200px;
 }
