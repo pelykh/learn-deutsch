@@ -1,5 +1,6 @@
 const scroll = new SmoothScroll('a[href*="#"]', {
   offset: () => 100,
+  durationMax: 1000,
 });
 
 const nav = document.getElementById('nav');

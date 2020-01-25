@@ -61,7 +61,7 @@ body::selection {
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   transition: background 0.3s, color 0.3s;
   height: 60px;
@@ -74,6 +74,10 @@ body::selection {
   /*color: #ffffff;*/
 }
 
+.about_us_page {
+  margin-top: 100px;
+}
+
 .nav__scrolled {
   color: inherit;
   background: #ffffff;
@@ -81,7 +85,7 @@ body::selection {
 }
 
 .nav_links {
-  margin: 10px 20px;
+  margin: 8px 2px;
   display: flex;
 }
 
@@ -90,6 +94,11 @@ body::selection {
   padding: 4px;
   vertical-align: middle;
   color: inherit !important;
+}
+
+.instagram_link {
+  height: 32px;
+  width: 32px;
 }
 
 .link {
@@ -105,7 +114,7 @@ body::selection {
 .nav__logo {
   text-decoration: none;
   color: inherit;
-  margin: 10px 20px;
+  margin: 16px;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -125,10 +134,11 @@ body::selection {
   line-height: 32px;
   margin: 8px;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .goals_page {
+  width: 100vw;
   position: relative;
   margin-top: 200px;
 }
@@ -137,6 +147,11 @@ body::selection {
   display: flex;
   justify-content: space-around;
   min-height: 30vh;
+}
+
+.contact_info {
+  text-align: left;
+  margin: 8px;
 }
 
 .goals_title {
@@ -175,7 +190,8 @@ body::selection {
 .goals_picture_box__corner:before {
   content: '';
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   border-top: 80px solid white;
   border-left: 80px solid #8a8a8a;
   width: 0;
@@ -307,12 +323,23 @@ body::selection {
   opacity: .6;
 }
 
+.tooltip_text {
+  margin: 4px 8px;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: .5;
+}
+
 .methodology__text_content {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+}
+
+.contact_block {
+  margin: 16px 0;
 }
 
 .methodology__page {
@@ -340,10 +367,18 @@ body::selection {
   height: 70vh;
 }
 
-.google_map {
+.before_google_map {
   width: 100%;
   height: 400px;
-  border-radius: 40px;
+  border-radius: 8px;
+}
+
+.after_google_map {
+  display: none;
+  width: 98vw;
+  height: 400px;
+  border-radius: 8px;
+  margin: 10px 0;
 }
 
 .contact_us_page {
@@ -354,7 +389,7 @@ body::selection {
 .teachers_page {
   height: 80vh;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .teachers_list {
@@ -362,6 +397,8 @@ body::selection {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 2px 8px;
 }
 
 .teachers_list__bullet {
@@ -399,7 +436,7 @@ body::selection {
 .teachers_logos {
   background: #FFCF39;
   height: 124px;
-  width: 100vw;
+  width: 100%;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -412,7 +449,7 @@ body::selection {
 }
 
 .price_page {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .price_plan {
@@ -444,6 +481,7 @@ body::selection {
   padding-left: 0;
   margin: 30px 20px;
 }
+
 .price_plan__option {
   margin: 10px 0;
   font-size: 1.10rem;
@@ -460,6 +498,7 @@ body::selection {
   width: 100%;
   font-weight: 700;
   font-size: 1.10em;
+  text-align: center;
 }
 
 .price_plan__button:hover {
@@ -468,6 +507,10 @@ body::selection {
 
 .center_text {
   text-align: center;
+}
+
+.complete_text {
+  margin: 8px 0;
 }
 
 .why_us_card__wrapper {
@@ -512,6 +555,7 @@ body::selection {
 .question {
   margin: 8px 2px;
   padding: 8px 2px;
+  text-align: left;
 }
 
 .questions_images_block {
@@ -534,46 +578,65 @@ body::selection {
 }
 
 @media only screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .header__text_wrapper {
     text-align: center;
   }
 
+  h1 {
+    margin: 0.67em 8px 0 8px;
+  }
+
   .header__title {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .header__name {
-    font-size: 60px;
+    font-size: 56px;
+  }
+
+  .header_subtitle {
+    font-size: 18px;
   }
 
   .header__character {
-    bottom: 0;
+    position: relative;
     width: 80vw;
+    left: 50%;
+    top: 16px;
+    bottom: auto;
+    transform: translateX(-30%);
   }
 
   .header__cloud_01 {
     width: 100vw;
+    bottom: -24vh;
   }
 
   .header__cloud_02 {
-    width: 60vw;
+    width: 67vw;
   }
 
   .header__cloud_03 {
-    width: 160vw;
+    display: none;
   }
 
   .header_content {
+    height: auto;
     align-items: flex-start;
-    padding-top: 150px;
+    padding-top: 76px;
   }
 
   .why_us_card__wrapper {
     height: auto;
-    margin: 8px;
+    margin: 8px 20px;
   }
 
   .methodology__page {
+    margin-top: 20px;
     height: auto;
   }
 
@@ -583,17 +646,19 @@ body::selection {
 
   .teachers_page {
     height: auto;
-    margin-top: 0;
+    margin-top: 8px;
   }
 
   .teachers_logo {
-    height: 42px;
+    height: 32px;
   }
 
   .teachers_character {
     position: relative;
     width: 30vw;
+    height: 100%;
     right: 0;
+    bottom: auto;
     transform: translate(50vw, 20px);
   }
 
@@ -620,6 +685,70 @@ body::selection {
   }
 
   .goals_background_strip {
-    height: 100px;
+    margin-top: -100px;
+    height: 200px;
+  }
+
+  .page__title {
+    font-size: 30px;
+  }
+
+  .course_title {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .price_plan {
+    margin: 8px;
+  }
+
+  .methodology_block {
+    margin: 4px 2px;
+  }
+
+  .about_us_page {
+    margin-top: 50px;
+  }
+
+  .questions_character {
+    max-height: 200px;
+  }
+
+  .why_us_card__image {
+    display: none;
+  }
+
+  .before_google_map {
+    display: none;
+  }
+
+  .after_google_map {
+    display: block;
+  }
+
+  .contact_info {
+    text-align: center;
+  }
+
+  .contact_block {
+    margin: 8px 0;
+  }
+
+  .complete_text {
+    margin: 0;
+  }
+
+  .nav__logo__title {
+    margin: 8px 2px;
+  }
+
+  .nav_links {
+    margin: 8px 2px;
+  }
+
+  .nav__logo {
+    margin: 2px;
   }
 }

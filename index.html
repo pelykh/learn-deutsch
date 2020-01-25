@@ -3,7 +3,7 @@
 <head>
   <title>ZumZiel</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic"
         rel="stylesheet">
   <link rel="stylesheet" href="css/lib/flexbox.css">
@@ -13,17 +13,19 @@
 
 <body>
 <nav id="nav" class="nav nav__sticky">
-  <a href="/" class="nav__logo">
+  <a href="#home" class="nav__logo">
     <span class="nav__logo__title">Zum Ziel</span>
   </a>
   <div class="nav_links">
     <a class="link nav_link" href="#price">Ціна</a>
     <a class="link nav_link" href="#contacts">Контакти</a>
+    <a class="link nav_link" href="https://instagram.com/deutsch_kurs_zz?igshid=xe12eszk0i6v"><img src="images/instagram-icon.png" class="instagram_link" /></a>
   </div>
 </nav>
-<!-- 1 -->
+
 <header class="header">
-  <div id="particles-js"></div>
+  <!--  <div id="particles-js"></div>-->
+  <a id="home"></a>
   <div class="row header_content">
     <div class="
     col-xs-offset-0
@@ -37,20 +39,18 @@
       </h1>
       <h2 class="header_subtitle">Курси німецької мови в місті Рівне</h2>
     </div>
-    <img class="background_illustration header__character" src="images/header_character.png"/>
+    <div>
+      <img class="background_illustration header__character" src="images/header_character.png"/>
+    </div>
+
     <img class="background_illustration header__cloud_01" src="images/header_cloud_01.png"/>
     <img class="background_illustration header__cloud_02" src="images/header_cloud_02.png"/>
     <img class="background_illustration header__cloud_03" src="images/header_cloud_03.png"/>
   </div>
 </header>
-<!-- /1 -->
 
-<br/>
-<br/>
-<br/>
-
-<h2 class="page__title"><a id="about-us"></a> Чому саме ми?</h2>
-<div class="row">
+<div class="row about_us_page">
+  <h2 class="page__title"><a id="about-us"></a> Чому саме ми?</h2>
   <div class="col-md-offset-4 col-md-4">
     <p class="text center_text">
       Центр іноземних мов "Zum Ziel" - найкраще місце для вивчення німецької
@@ -58,10 +58,11 @@
     </p>
   </div>
 </div>
+
 <div class="row why_us_block">
-  <div class="col-md-offset-2 col-md-8">
+  <div class="col-xs-offset-0 col-xs-12 col-md-offset-2 col-md-8">
     <div class="row center-md">
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="why_us_card__wrapper black_block">
           <div class="why_us_card">
             <img class="why_us_card__image" src="images/header_character.png"/>
@@ -72,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="why_us_card__wrapper red_block">
           <div class="why_us_card">
             <img class="why_us_card__image" src="images/header_character.png"/>
@@ -83,13 +84,13 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="why_us_card__wrapper yellow_block">
           <div class="why_us_card">
             <img class="why_us_card__image" src="images/header_character.png"/>
             <h3 class="subtitle">Не хочеш витрачати час на дорогу?</h3>
             <p class="text">
-              Зручне розташування: 5 хв. від центру міста, м.Рівне, вул. Пластова 31, ауд. 318
+              Зручне розташування, 5 хв. від центру міста - м.Рівне, вул. Пластова 31, ауд. 318
             </p>
           </div>
         </div>
@@ -102,10 +103,11 @@
   <h2 class="page__title"><a id="methodology"></a> Новітні методики викладання</h2>
 
   <div class="
-  col-xs-offset-0
+   col-xs-offset-0
    col-xs-12
-  col-md-offset-2
-  col-md-8">
+   col-md-offset-2
+   col-md-8
+">
     <div class="row">
       <div class="col-xs-12 col-md-6">
         <div class="methodology_character__wrapper">
@@ -114,7 +116,7 @@
       </div>
       <div class="col-xs-12 col-md-6">
         <div class="methodology__text_content">
-          <div>
+          <div class="methodology_block">
             <h3 class="subtitle">Сучасні підручники</h3>
             <p class="text">
               Використання сучасних підручників іноземних видавництв (Hueber, Klett, Cornelsen, Langenscheidt) з відео
@@ -122,14 +124,14 @@
               аудіо матеріалами
             </p>
           </div>
-          <div>
+          <div class="methodology_block">
             <h3 class="subtitle">Занурення в середовище</h3>
             <p class="text">
               Викладання ведеться переважно німецькою мовою для створення ефекту «занурення» в мовне
               середовище
             </p>
           </div>
-          <div>
+          <div class="methodology_block">
             <h3 class="subtitle">Комунікативний метод</h3>
             <p class="text">
               Вивчення мови через живе спілкування, діалог між викладачем та учнями, замість зазубрювання граматичних
@@ -176,8 +178,8 @@
 </div>
 
 <div class="goals_page">
-  <h2 class="page__title"><a id="course_goals"></a>Напрями підготовки</h2>
-  <div class="col-md-offset-2 col-md-8">
+  <h2 class="page__title course_title"><a id="course_goals"></a>Напрями підготовки</h2>
+  <div class="col-xs-offset-0 col-md-offset-2 col-md-8">
     <div class="row goals_page__content">
       <div class="col-lg-3 col-md-4">
         <div class="goals_picture_box">
@@ -246,9 +248,9 @@
 
 <div class="price_page">
   <h2 class="page__title"><a id="price"></a>Вартість навчання</h2>
-  <div class="col-md-offset-2 col-md-8">
+  <div class="col-xs-offset-0 col-md-offset-2 col-md-8">
     <div class="row center-md">
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="box price_plan">
           <div class="price_plan__title">Семестр</div>
           <div class="price_plan__price">3400 грн</div>
@@ -262,7 +264,7 @@
           <a class="price_plan__button" href="#contacts">Обрати</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="box price_plan">
           <div class="price_plan__title">Інтенсив</div>
           <div class="price_plan__price">3400 грн</div>
@@ -276,9 +278,9 @@
           <a class="price_plan__button" href="#contacts">Обрати</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-xs-12 col-lg-3 col-md-4">
         <div class="box price_plan">
-          <div class="price_plan__title">Семестр</div>
+          <div class="price_plan__title">Супер Інтенсив</div>
           <div class="price_plan__price">3400 грн</div>
           <div class="text">за курс</div>
           <ul class="price_plan__options_block">
@@ -291,13 +293,20 @@
         </div>
       </div>
     </div>
+    <div class="row center-xs tooltip_text">
+     <div class="col-sm-12 col-md-6 complete_text">
+       За умови успішного закінчення курсів видається сертифікат Рівненського
+       державного гуманітарного університету. Умовою успішного закінчення
+       курсів є 80% відвіданих занять та складання тесту.
+     </div>
+    </div>
   </div>
 </div>
 
 <div class="questions_page">
   <h2 class="page__title"><a id="questions"></a>Популярні запитання</h2>
-  <div class="col-md-offset-2 col-md-8">
-    <div class="row">
+  <div class="col-xs-offset-0 col-md-offset-2 col-md-8">
+    <div class="row center-xs">
       <div class="col-md-6">
         <div class="questions_images_block">
           <img class="questions_character" src="images/questions_character.png"/>
@@ -332,25 +341,44 @@
     </div>
   </div>
 </div>
-</div>
 
 
 <h2 class="page__title"><a id="contacts"></a>Контакти</h2>
 <div class="row contact_us_page">
-  <div class="col-md-offset-2 col-md-8">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Мобільний</h3>
-        <div>0987614528</div>
-        <div>0673808729</div>
-
-        <h3>Почта</h3>
-        <div>email@gmail.com</div>
+  <div class="col-xs-offset-0 col-xs-12 col-md-offset-2 col-md-8">
+    <div class="row center-xs">
+      <div class="col-sm-0 col-md-6">
+        <iframe class="before_google_map"
+                src="https://maps.google.com/maps?q=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D0%B2%D0%B0%2C%2031%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <address class="contact_info">
+          <div class="contact_block">
+            <h3 class="subtitle">Телефон</h3>
+            <a href="tel:+380987614528" class="link">+380987614528</a>
+            <a href="tel:+380673808729" class="link">+380673808729</a>
+          </div>
+          <div class="contact_block">
+            <h3 class="subtitle">Почта</h3>
+            <a href="mailto:email@gmail.com" class="link">email@gmail.com</a><br>
+          </div>
+         <div class="contact_block">
+           <h3 class="subtitle">Адреса проведення курсів</h3>
+           <div class="text">м.Рівне, вул. Пластова 31, ауд. 318</div>
+         </div>
+          <div class="contact_block">
+            <h3 class="subtitle">Час проведення курсів</h3>
+            <div class="text">Понеділок - П‘ятниця: 8.00 – 20.00</div>
+            <div class="text">Субота: 8.00 – 15.00</div>
+            <div class="text">Неділя: Вихідний</div>
+          </div>
+        </address>
 
       </div>
-      <div class="col-md-6">
-        <iframe class="google_map"
-                src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=17&ie=UTF8&iwloc=&output=embed"
+      <div class="col-sm-12 col-md-0">
+        <iframe class="after_google_map"
+                src="https://maps.google.com/maps?q=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D0%B2%D0%B0%2C%2031%2C%20%D0%A0%D1%96%D0%B2%D0%BD%D0%B5%2C%20%D0%A0%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
       </div>
     </div>
@@ -359,7 +387,6 @@
 </div>
 
 <footer class="footer">
-
 </footer>
 
 <script src="js/lib/smooth-scroll.polyfills.min.js"></script>
