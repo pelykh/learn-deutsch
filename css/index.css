@@ -81,7 +81,7 @@ body::selection {
 }
 
 .nav_links {
-  margin: 10px 50px;
+  margin: 10px 20px;
   display: flex;
 }
 
@@ -105,7 +105,7 @@ body::selection {
 .nav__logo {
   text-decoration: none;
   color: inherit;
-  margin: 10px 50px;
+  margin: 10px 20px;
   display: flex;
   align-items: center;
   z-index: 3;
@@ -297,11 +297,11 @@ body::selection {
 .subtitle {
   font-weight: 600;
   font-size: 22px;
-  margin: 8px 0;
+  margin: 8px;
 }
 
 .text {
-  margin: 4px 0;
+  margin: 4px 8px;
   font-weight: 400;
   font-size: 1.1rem;
   opacity: .6;
@@ -353,10 +353,7 @@ body::selection {
 
 .teachers_page {
   height: 80vh;
-  position: relative
-}
-
-.teachers_title {
+  position: relative;
   margin-top: 100px;
 }
 
@@ -402,10 +399,7 @@ body::selection {
 .teachers_logos {
   background: #FFCF39;
   height: 124px;
-  position: absolute;
-  bottom: 10vh;
-  left: 0;
-  right: 0;
+  width: 100vw;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -537,4 +531,95 @@ body::selection {
   left: 0;
   right: 0;
   height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header__text_wrapper {
+    text-align: center;
+  }
+
+  .header__title {
+    font-size: 40px;
+  }
+
+  .header__name {
+    font-size: 60px;
+  }
+
+  .header__character {
+    bottom: 0;
+    width: 80vw;
+  }
+
+  .header__cloud_01 {
+    width: 100vw;
+  }
+
+  .header__cloud_02 {
+    width: 60vw;
+  }
+
+  .header__cloud_03 {
+    width: 160vw;
+  }
+
+  .header_content {
+    align-items: flex-start;
+    padding-top: 150px;
+  }
+
+  .why_us_card__wrapper {
+    height: auto;
+    margin: 8px;
+  }
+
+  .methodology__page {
+    height: auto;
+  }
+
+  .methodology_cloud {
+    display: none;
+  }
+
+  .teachers_page {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .teachers_logo {
+    height: 42px;
+  }
+
+  .teachers_character {
+    position: relative;
+    width: 30vw;
+    right: 0;
+    transform: translate(50vw, 20px);
+  }
+
+  .teachers_cloud_01 {
+    display: none;
+  }
+
+  .teachers_cloud_02 {
+    width: 100vw;
+    bottom: 0;
+  }
+
+  .goals_page {
+    margin-top: 80px;
+  }
+
+  .goals_picture_box {
+    display: none;
+  }
+
+  .goals_list {
+    margin: 8px;
+    height: auto;
+  }
+
+  .goals_background_strip {
+    height: 100px;
+  }
 }
