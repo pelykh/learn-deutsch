@@ -1,0 +1,4 @@
+User-agent: Googlebot-Image
+Disallow: /images/decorative/
+
+Sitemap: https://zum-ziel.rv.ua/sitemap.xml
